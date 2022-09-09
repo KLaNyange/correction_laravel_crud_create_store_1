@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/js/app.js'])
-    <title>Pokemon</title>
+    <title>Pokemon - Correction</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                     <a class="nav-link active text-dark" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="">Add Your Pokemon</a>
+                    <a class="nav-link text-dark" href="{{ route('formulaire') }}">Add Your Pokemon</a>
                 </li>
             </ul>
         </div>

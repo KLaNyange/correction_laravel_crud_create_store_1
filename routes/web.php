@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PokedexController;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+
+Route::get('/', [PokedexController::class, 'index']);
+Route::get('/formulaire', [PokedexController::class, 'create'])->name('formulaire');
+Route::post('/store', [PokedexController::class, 'store'])->name('store');
 
 
