@@ -23,6 +23,8 @@ class PokedexController extends Controller
         $store->url = $request->url;
         $store->level = $request->level;
         $store->save();
+        // dd($store);
         return redirect('/');
+
     }
 }
